@@ -24,10 +24,10 @@ jobs:
       with:
         ssh-private-key: ${{ secrets.DOCS_DEPLOY_KEY }}
 
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+    - name: dongzpo
+      uses: akosidongz/dongzpo-deploy-action@releases/v3
       with:
-        BRANCH: gh-pages
+        BRANCH: master
         FOLDER: docs
         SSH: true
         CLEAN: true
